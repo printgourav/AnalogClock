@@ -85,7 +85,7 @@
 
     const secondDegrees = ((seconds/60)*360)+90;
     const minuteDegrees = ((minutes/60)*360)+90;
-    const hourDegree =    ((hour/12)*360) + 90;
+    const hourDegree =    ((minutes/12)*360) + 90;
 
     minuteHand.style.transform = `rotate(${minuteDegrees}deg)`;
     secondHand.style.transform = `rotate(${secondDegrees}deg)`;
@@ -97,4 +97,5 @@
 
   </script>
 </body>
+
 </html>
